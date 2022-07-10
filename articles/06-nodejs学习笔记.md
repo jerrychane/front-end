@@ -66,16 +66,12 @@ Node可以通过node命令来执行Node脚本，创建一个my-web-server.js文�
 
 ```javascript
 var http = require('http');
-var serv = http.createServer(function(req,res) {
+var server = http.createServer(function(req,res) {
     res.writeHead(200,{ 'Content-Type':'text/html' });
     res.end('<marquee>Awesome Node.js </marquee>');
 });
-serv.listen(3000);
+server.listen(3000);
 ```
-
-
-
-
 
 ## 5 命令行工具(CLI)以及FS API：首个Node应用
 
